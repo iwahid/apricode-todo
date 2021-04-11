@@ -7,7 +7,7 @@ class Todos {
     { id: '1', title: "Освоить MobX", completed: true },
     { id: '2', title: "Написать To-do приложение для Априкод", completed: true },
     { id: '3', title: "Отправить решение на оценку и ревью", completed: true },
-    { id: '4', title: "Пройти ревью приложение", completed: false },
+    { id: '4', title: "Пройти ревью приложения", completed: false },
     { id: '5', title: "Пройти собеседование", completed: false },
   ]
 
