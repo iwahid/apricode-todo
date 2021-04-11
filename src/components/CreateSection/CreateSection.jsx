@@ -5,7 +5,7 @@ import { Input } from './../UI/Input'
 import { Todo } from '../../utils/todoConstructor'
 import styles from './CreateSection.module.scss'
 
-/* Component for creating new todo */
+/** Component for creating new todo */
 export const CreateSection = () => {
 
   const [inputValue, changeInputValue] = useState('')
