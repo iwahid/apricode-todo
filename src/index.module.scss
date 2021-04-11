@@ -1,0 +1,27 @@
+html {
+  height: 100vh;
+}
+
+#root {
+  height: 100%;
+}
+
+:root {
+  /* Colors */
+  --main-accent-color: #00a3ff;
+  --main-secondary-text-color: #9c9c9c;
+
+  --main-primary-bg-color: #ffffff;
+  --main-secondary-bg-color: #f4f6f8;
+  --main-primary-text-color: #000000;
+  --main-secondary-text-color: #9c9c9c;
+  --main-border-color: #f2f2f2;
+}
+
+body {
+  height: 100%;
+  margin: 0;
+  font-family: "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}

@@ -1,0 +1,23 @@
+.wrapper {
+  display: flex;
+  justify-content: center;
+  padding: 20px 0;
+  text-align: left;
+  background-color: var(--main-secondary-bg-color);
+  @media (max-width: 768px) {
+    text-align: center;
+    padding: 10px 0;
+  }
+}
+
+.container {
+  width: 100%;
+  max-width: 768px; /* FIXME: заменить на переменные экрана */
+  color: var(--main-accent-color);
+  padding: 0 10px;
+}
+
+.title {
+  font-size: 32px;
+  margin: 0;
+}

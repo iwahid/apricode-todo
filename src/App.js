@@ -1,23 +1,19 @@
-import logo from './logo.svg';
-import './App.module.scss';
+import React from 'react'
+import { Header } from './components/Header';
+import { СontentWrapper } from './components/СontentWrapper';
+import { CreateSection } from './components/CreateSection';
+import { TodosContainer } from './components/TodosContainer';
+import styles from './App.module.scss'
 
-function App() {
+
+const App = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className={styles.app}>
+      <Header></Header>
+      <СontentWrapper>
+        <CreateSection />
+        <TodosContainer />
+      </СontentWrapper>
     </div>
   );
 }

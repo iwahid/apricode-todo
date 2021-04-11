@@ -1,0 +1,1 @@
+export { СontentWrapper } from './СontentWrapper.jsx';
