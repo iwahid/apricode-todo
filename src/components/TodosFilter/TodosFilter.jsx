@@ -21,19 +21,19 @@ export const TodosFilter = ({ activeFilter }) => {
             <button
               className={`${styles.filterList__item} ${activeFilter === 'all' && styles.filterList__item_active}`}
               onClick={() => handleChangeFilter('all')}
-            >Все</button>
+            >Все <span>{storeTodos.allTodoCount}</span></button>
           </li>
           <li>
             <button
               className={`${styles.filterList__item} ${activeFilter === 'unCompleted' && styles.filterList__item_active}`}
               onClick={() => handleChangeFilter('unCompleted')}
-            >Актуальные</button>
+            >Актуальные <span>{storeTodos.completedTodoCount}</span></button>
           </li>
           <li>
             <button
               className={`${styles.filterList__item} ${activeFilter === 'completed' && styles.filterList__item_active}`}
               onClick={() => handleChangeFilter('completed')}
-            >Выполненые</button>
+            >Выполненые <span>{storeTodos.unCompletedTodoCount}</span></button>
           </li>
         </ul>
       </div>

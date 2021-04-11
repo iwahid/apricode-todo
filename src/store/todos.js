@@ -27,6 +27,20 @@ class Todos {
     }
   }
 
+  /* Getters for counting remaining todo by category */
+  get completedTodoCount() {
+    return this.todos.filter(todo => todo.completed).length
+  }
+  
+  get unCompletedTodoCount() {
+    return this.todos.filter(todo => !todo.completed).length
+  }
+
+  get allTodoCount() {
+    return this.todos.length
+  }
+
+
   constructor() {
     makeAutoObservable(this)
   }
