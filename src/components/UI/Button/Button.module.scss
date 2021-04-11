@@ -1,0 +1,34 @@
+.button {
+  width: 100%;
+  padding: 5px 10px;
+  background-color: var(--main-secondary-bg-color);
+  color: var(--main-secondary-text-color);
+  font-weight: 500;
+  border: none;
+  border-radius: 2px;
+  transition: opacity 0.2s linear;
+
+  &:hover {
+    transition: opacity 0.2s linear;
+    opacity: 0.7;
+  }
+
+  /* button size modificators */
+  &_small {
+    font-size: 12px;
+  }
+
+  &_medium {
+    font-size: 16px;
+  }
+
+  &_large {
+    font-size: 20px;
+  }
+
+  /* button type modificators */
+  &_success {
+    background-color: var(--main-accent-color);
+    color: var(--main-primary-text-color);
+  }
+}
