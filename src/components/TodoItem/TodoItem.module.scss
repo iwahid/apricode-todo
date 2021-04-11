@@ -1,0 +1,40 @@
+.todoItem {
+  width: 100%;
+  padding: 0 5px;
+  transition: background-color 0.2s linear;
+
+  &:hover {
+    transition: background-color 0.2s linear;
+    background-color: var(--main-secondary-bg-color);
+  }
+
+  &__label {
+    display: flex;
+    align-items: flex-start;
+    padding: 10px 0;
+
+    input:checked ~ p {
+      text-decoration: line-through;
+      color: var(--main-secondary-text-color);
+    }
+  }
+
+  &__text {
+    width: 100%;
+    margin: 0 15px;
+    word-wrap: break-word;
+  }
+
+  &__remove {
+    padding: 2px 5px;
+    background-color: transparent;
+    border: 1px solid transparent;
+    transition: border 0.2s linear;
+
+    &:hover {
+      border: 1px solid var(--main-accent-color);
+      border-radius: 2px;
+      transition: border 0.2s linear;
+    }
+  }
+}
