@@ -1,13 +1,14 @@
 import React from 'react'
 import storeTodos from '../../store/todos'
 import styles from './TodosFilter.module.scss'
+import { observer } from 'mobx-react-lite';
 
 /**
  * Component for filtering the todo list to display
  * 
  * @param {string} activeFilter - filter-flag (all, completed, unCompleted)
  */
-export const TodosFilter = ({ activeFilter }) => {
+export const TodosFilter = observer(({ activeFilter }) => {
 
   const handleChangeFilter = (filter) => {
     storeTodos.selectedFilter = filter
@@ -27,16 +28,16 @@ export const TodosFilter = ({ activeFilter }) => {
             <button
               className={`${styles.filterList__item} ${activeFilter === 'unCompleted' && styles.filterList__item_active}`}
               onClick={() => handleChangeFilter('unCompleted')}
-            >Актуальные <span>{storeTodos.completedTodoCount}</span></button>
+            >Актуальные <span>{storeTodos.unCompletedTodoCount}</span></button>
           </li>
           <li>
             <button
               className={`${styles.filterList__item} ${activeFilter === 'completed' && styles.filterList__item_active}`}
               onClick={() => handleChangeFilter('completed')}
-            >Выполненые <span>{storeTodos.unCompletedTodoCount}</span></button>
+            >Выполненые <span>{storeTodos.completedTodoCount}</span></button>
           </li>
         </ul>
       </div>
     </div>
   )
-}
+})
