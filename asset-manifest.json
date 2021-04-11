@@ -1,0 +1,20 @@
+{
+  "files": {
+    "main.css": "/apricode-todo/static/css/main.142c857c.chunk.css",
+    "main.js": "/apricode-todo/static/js/main.0709d976.chunk.js",
+    "main.js.map": "/apricode-todo/static/js/main.0709d976.chunk.js.map",
+    "runtime-main.js": "/apricode-todo/static/js/runtime-main.6d82469e.js",
+    "runtime-main.js.map": "/apricode-todo/static/js/runtime-main.6d82469e.js.map",
+    "static/js/2.3d5d3b78.chunk.js": "/apricode-todo/static/js/2.3d5d3b78.chunk.js",
+    "static/js/2.3d5d3b78.chunk.js.map": "/apricode-todo/static/js/2.3d5d3b78.chunk.js.map",
+    "index.html": "/apricode-todo/index.html",
+    "static/css/main.142c857c.chunk.css.map": "/apricode-todo/static/css/main.142c857c.chunk.css.map",
+    "static/js/2.3d5d3b78.chunk.js.LICENSE.txt": "/apricode-todo/static/js/2.3d5d3b78.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.6d82469e.js",
+    "static/js/2.3d5d3b78.chunk.js",
+    "static/css/main.142c857c.chunk.css",
+    "static/js/main.0709d976.chunk.js"
+  ]
+}
