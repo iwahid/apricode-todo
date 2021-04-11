@@ -33,7 +33,6 @@ class Todos {
 
   addTodo(todo) {
     this.todos.push(todo)
-    console.log(this.todos)
   }
 
   removeTodo(id) {
